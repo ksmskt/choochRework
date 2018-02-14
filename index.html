@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CHOOCH</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="CHOOCH">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="navWrapper">
+                <img class="navLogo" src="img/logo.jpg">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#!">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">Home</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="videoBgWrapper section1">
+        <div class="videoOverlay">
+            <div class="container">
+                <div class="col-md-10 videoText">
+                    <h1>Al Recognition by Autonomous Training</h1>
+                    <p>Chooch is an AI that codes AI in computer vision.
+                        <b>Finds data</b>, codes models, and trains perceptions for visual recognition. Our mission is to become
+                        the most powerful solution and innovation leader in autonomous training in artificial intelligence
+                        enabling.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <video autoplay loop muted>
+            <source src="img/video.mp4" type="video/mp4">
+        </video>
+
+    </section>
+    <section class="solutionWrapper section2">
+        <div class="container">
+            <div class="row">
+                <div class="solution">
+                    <h2>Chooch Solution</h2>
+
+                    <div class="solutionList row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="each">
+                                <img src="img/5.png">
+                                <i>1</i>
+                                <h4>Chooch Training Engine</h4>
+                                <p>
+                                    Our proprietary training engine autonomously collects and trains the data to create new perception sets in minutes for future
+                                    predictions
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 each">
+                            <div class="each">
+                                <img src="img/6.png">
+                                <i>2</i>
+                                <h4>Chooch perceptions</h4>
+                                <p>
+                                    Our perceptions offer different perspectives to see the world enabling our clients to recognize what matters most to them
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 each">
+                            <div class="each">
+                                <img src="img/7.png">
+                                <i>3</i>
+                                <h4>Chooch Prediction Engine </h4>
+                                <p>
+                                    By utilizing our prediction model and turning on the relevant perception class sets, our prediction engine recognize on-demand
+                                    or live images videos in order to give our clients
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script>
+        //shrink on scroll  
+
+        window.onscroll = function () {
+            growShrinkLogo()
+        };
+
+        function growShrinkLogo() {
+            var Logo = document.getElementById("Logo")
+            if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+                $('.navWrapper').addClass('shrink')
+            } else {
+                $('.navWrapper').removeClass('shrink')
+            }
+        }
+
+        //shrink on scroll ends
+
+        var highest = null;
+        var hi = 0;
+        $(".solutionList .each").each(function () {
+            var h = $(this).height();
+            if (h > hi) {
+                hi = h;
+                highest = $(this);
+            }
+        });
+
+        $(".solutionList .each").height(highest.height());
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,365 @@
+.loginBg {
+  width: 100%;
+  height: 100vh;
+  float: left;
+  background: linear-gradient(45deg, #2A2E3A 50%, #CE7813 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.loginArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .loginArea .logo {
+    margin-bottom: 20px; }
+
+.loginFormContainer {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  background-color: #1e2129; }
+  @media (min-width: 640px) {
+    .loginFormContainer {
+      width: 500px; } }
+
+.loginForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  width: 100%;
+  position: relative; }
+  .loginForm input {
+    border: 0;
+    margin-bottom: 25px;
+    padding: 10px 15px 10px 40px;
+    transition: 0.2s ease-in all;
+    color: #8a8b8c; }
+    .loginForm input::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #8a8b8c;
+      transition: 0.2s ease-in all; }
+    .loginForm input::-moz-placeholder {
+      /* Firefox 19+ */
+      transition: 0.2s ease-in all;
+      color: #8a8b8c; }
+    .loginForm input:-ms-input-placeholder {
+      /* IE 10+ */
+      transition: 0.2s ease-in all;
+      color: #8a8b8c; }
+    .loginForm input:-moz-placeholder {
+      /* Firefox 18- */
+      transition: 0.2s ease-in all;
+      color: #8a8b8c; }
+    .loginForm input:focus {
+      color: #fff;
+      outline: 0; }
+      .loginForm input:focus::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #fff; }
+      .loginForm input:focus::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #fff; }
+      .loginForm input:focus:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #fff; }
+      .loginForm input:focus:-moz-placeholder {
+        /* Firefox 18- */
+        color: #fff; }
+
+.loginUsernameLabel {
+  position: relative;
+  width: 100%;
+  float: left; }
+  .loginUsernameLabel img {
+    opacity: 0.4;
+    transition: 0.2s ease-in all;
+    width: 15px;
+    position: absolute;
+    height: 16px;
+    left: 10px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; }
+
+.loginPasswordLabel {
+  position: relative;
+  width: 100%;
+  float: left; }
+  .loginPasswordLabel img {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.4;
+    transition: 0.2s ease-in all;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; }
+
+.loginUsername {
+  background: #2a2e3a;
+  height: 50px;
+  width: 100%;
+  display: block; }
+
+.loginPassword {
+  background: #2a2e3a;
+  height: 50px;
+  width: 100%;
+  display: block; }
+
+.loginBtn {
+  cursor: pointer;
+  color: #CE7813;
+  border: 2px solid #CE7813;
+  border-radius: 40px;
+  width: 110px;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: 0.2s ease-in all;
+  height: 36px;
+  background: transparent;
+  color: #CE7813;
+  border: 2px solid #CE7813;
+  border-radius: 40px;
+  width: 110px;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: 0.2s ease-in all;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  height: 36px;
+  transition: 0.2s ease-in all; }
+  .loginBtn:focus {
+    outline: 0; }
+  .loginBtn:hover {
+    color: #fff;
+    background: #CE7813; }
+
+.loginCopyright {
+  color: gainsboro;
+  font-size: 11px;
+  margin-top: 22px;
+  display: flex; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div,
+a,
+button,
+label,
+form,
+input,
+p {
+  font-family: "Montserrat"; }
+
+.orangeBar {
+  background: #E67E22;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .orangeBar .topBar_mail {
+    color: #fff; }
+
+.orangeBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .orangeBarContainer .topBar_mail {
+    font-size: 14px; }
+    .orangeBarContainer .topBar_mail i {
+      margin-right: 6px; }
+
+.topBar_social {
+  float: right; }
+  .topBar_social li {
+    list-style-type: none;
+    float: left;
+    margin: 0 10px; }
+    .topBar_social li a {
+      color: #fff;
+      font-size: 14px; }
+
+.darkBar {
+  background: #232731;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+
+.darkBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; }
+  @media (min-width: 1200px) {
+    .darkBarContainer {
+      width: 1140px; } }
+
+.watchLink {
+  color: #fff;
+  transition: 0.2s all ease-in; }
+  .watchLink:hover {
+    color: #E67E22; }
+
+.indexBanner {
+  display: flex;
+  width: 100%;
+  background: url(../img/bg-colorful.jpg) no-repeat;
+  height: 600px;
+  position: relative; }
+  @media (min-width: 1200px) {
+    .indexBanner {
+      height: 800px; } }
+  .indexBanner .overlayDark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 41, 41, 0.7); }
+
+.indexBannerContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+  .indexBannerContainer h1 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px; }
+    @media (min-width: 1200px) {
+      .indexBannerContainer h1 {
+        font-size: 60px; } }
+
+.indexBannerButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .indexBannerButtons a {
+    color: #E67E22;
+    border: 2px solid #E67E22;
+    border-radius: 40px;
+    padding: 15px 22px;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: 0.2s ease-in all; }
+    @media (min-width: 1200px) {
+      .indexBannerButtons a {
+        padding: 15px 40px; } }
+    .indexBannerButtons a:hover {
+      background: #E67E22;
+      color: #fff; }
+
+.indexBannerText1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300; }
+  @media (min-width: 1200px) {
+    .indexBannerText1 {
+      font-size: 35px; } }
+
+.indexBannerText2 {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 900; }
+  @media (min-width: 1200px) {
+    .indexBannerText2 {
+      font-size: 35px; } }
+
+.indexContentText {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  padding: 0 10px; }
+  @media (min-width: 1200px) {
+    .indexContentText {
+      paddding: intial; } }
+
+.indexContentContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .indexContentContainer h2 {
+    color: #222835;
+    position: relative;
+    font-weight: 500;
+    font-size: 28px; }
+    .indexContentContainer h2:after {
+      background: #E67E22;
+      content: "";
+      bottom: -20px;
+      content: "";
+      height: 4px;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      width: 50px; }
+  .indexContentContainer p {
+    color: #555555;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 35px; }
+
+footer {
+  height: 100px;
+  background: #252b38;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  footer p {
+    color: #acb1b4;
+    font-size: 12px;
+    line-height: 24px; }
+
+.using__fields {
+  width: 100%;
+  max-width: 1000px;
+  display: none; }
+  @media (min-width: 480px) {
+    .using__fields {
+      display: block; } }
+
+.using__fields-mobile {
+  display: block;
+  width: 100%; }
+  @media (min-width: 480px) {
+    .using__fields-mobile {
+      display: none; } }
+
+.navLogo {
+  width: 112px; }
+
+/*# sourceMappingURL=style-no-prefix.css.map */
